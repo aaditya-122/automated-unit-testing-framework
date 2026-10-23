@@ -1,4 +1,4 @@
-"""Thirty-five named cases covering CRUD, boundaries, and invalid input."""
+"""Thirty-four named cases covering CRUD, boundaries, and invalid input."""
 import pytest
 from qa_crud import ValidationError
 
@@ -58,3 +58,4 @@ def test_repository_case(repo, operation, args, expected):
         assert created["email"] == args[1].strip().lower()
     else:
         assert repo.list(*args) == []
+
