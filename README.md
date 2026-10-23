@@ -22,3 +22,7 @@ Reports are written to `reports/test-cases.csv` and `reports/test-cases.md`. Set
 Implement behavior in `src/qa_crud/repository.py`, add tests under `tests/`, and apply `@pytest.mark.case(id=..., input=..., expected=..., severity=...)` to include tests in the generated documentation.
 
 The database is an isolated in-memory SQLite connection per test. Reports capture pytest's observed outcome and failure detail. See `LICENSE` for licensing.
+
+## Interactive demo
+
+[Open the browser demo](https://aaditya-122.github.io/automated-unit-testing-framework/) to try the in-memory CRUD playground and sample checks. The page is an educational browser preview; the actual Python tests run in pytest and in GitHub Actions.
